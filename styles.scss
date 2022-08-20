@@ -1,0 +1,59 @@
+body {
+    font-size: 12px;
+    font-family: 'Kumbh Sans', sans-serif;
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+
+    .container {
+        display: flex;
+        flex-direction: column;
+
+        border-radius: 20px;
+        background-color: #fff;
+
+        padding: 30px;
+
+        height: 400px;
+
+        .img-section {
+            position: relative;
+            bottom: 140px;
+
+            .shadow {
+                filter: brightness(0);
+                position: relative;
+                bottom: 75px;
+            }
+        }
+
+        .faq-section {
+            position: relative;
+            bottom: 220px;
+
+            h1 {
+                text-align: center;
+            }
+
+            .question {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .btn {
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
+
+    .attribution {
+        margin-top: 50px;
+    }
+}

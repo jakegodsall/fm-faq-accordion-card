@@ -1,1 +1,45 @@
-/*# sourceMappingURL=styles.css.map */
+body {
+  font-size: 12px;
+  font-family: "Kumbh Sans", sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(hsl(273deg, 75%, 66%), hsl(240deg, 73%, 65%));
+}
+body .container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 30px;
+  height: 400px;
+}
+body .container .img-section {
+  position: relative;
+  bottom: 140px;
+}
+body .container .img-section .shadow {
+  filter: brightness(0);
+  position: relative;
+  bottom: 75px;
+}
+body .container .faq-section {
+  position: relative;
+  bottom: 220px;
+}
+body .container .faq-section h1 {
+  text-align: center;
+}
+body .container .faq-section .question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .container .faq-section .question .btn {
+  cursor: pointer;
+}
+body .attribution {
+  margin-top: 50px;
+}/*# sourceMappingURL=styles.css.map */
