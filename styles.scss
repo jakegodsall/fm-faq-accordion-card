@@ -1,59 +1,95 @@
-body {
-    font-size: 12px;
-    font-family: 'Kumbh Sans', sans-serif;
+$fontSize: 12px;
+$lightGreyBlue: hsl(240, 5%, 91%);
+$darkGreyBlue: hsl(240, 6%, 50%);
+$veryDarkGreyBlue: hsl(237, 12%, 33%);
+$softBlue: hsl(240, 73%, 65%);
+$softViolet: hsl(273, 75%, 66%);
+$softRed: hsl(14, 88%, 65%);
+$veryDarkSaturatedBlue: hsl(238, 29%, 16%);
 
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+html {
+    font-size: $fontSize;
 
-    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    body {
+        margin: 0;
+        font-family: 'Kumbh Sans', sans-serif;
+        background: linear-gradient($softViolet, $softBlue);
+        width: 100vw;
+        height: 100vh;
 
-    .container {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-        border-radius: 20px;
-        background-color: #fff;
+        .container {
+            box-sizing: border-box;
+            background-color: #fff;
+            border-radius: 30px;
+            height: 700px;
+            width: 360px;
+            padding: 20px;
 
-        padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
 
-        height: 400px;
-
-        .img-section {
-            position: relative;
-            bottom: 140px;
-
-            .shadow {
-                filter: brightness(0);
+            &__image {
                 position: relative;
-                bottom: 75px;
-            }
-        }
+                bottom: 120px;
 
-        .faq-section {
-            position: relative;
-            bottom: 220px;
-
-            h1 {
-                text-align: center;
+                flex: 1;
+                background: url('images/illustration-woman-online-mobile.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 100%;
             }
 
-            .question {
+            &__accordion {
+
+                flex: 3;
                 display: flex;
-                justify-content: space-between;
-                align-items: center;
+                flex-direction: column;
 
-                .btn {
-                    cursor: pointer;
+                .accordion__title {
+                    font-size: 3rem;
+                    text-align: center;
+                }
+
+                .accordion__questions {
+
+                    .question-answer {
+                        border-bottom: 1px solid #ddd;
+
+                        &__question {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+
+                            .btn {
+                                cursor: pointer;
+                            }
+                        }
+
+                        &__answer {
+                            display: none;
+                        }
+
+
+                    }
+
+                    .active {
+                        .question-answer__question {
+                            font-weight: 700;
+                        }
+
+                        .question-answer__answer {
+                            display: inline;
+                        }
+                    }
                 }
             }
         }
-
     }
 
-    .attribution {
-        margin-top: 50px;
-    }
 }

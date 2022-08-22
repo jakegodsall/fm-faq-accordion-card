@@ -1,13 +1,17 @@
-const faqSection = document.querySelector('.faq');
+// query selector
+const questions = document.querySelectorAll('.question-answer');
 
-const btns = document.querySelectorAll('.btn');
+questions.forEach(function (question) {
 
-btns.forEach(function (btn) {
-    btn.addEventListener('click', function (e) {
-        const template = e.target.parentNode.nextElementSibling;
+    const btn = question.firstElementChild.lastElementChild;
 
-        const clone = template.content.cloneNode(true);
-
-    });
-})
-
+    btn.addEventListener('click', function () {
+        questions.forEach(function (question) {
+            if (question.classList.contains('active')) {
+                question.classList.remove('active');
+            }
+        })
+        const answer = btn.parentNode.nextElementSibling;
+        question.classList.add('active');
+    })
+});
