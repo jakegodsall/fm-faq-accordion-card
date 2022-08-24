@@ -13,5 +13,6 @@ questions.forEach(function (question) {
         })
         const answer = btn.parentNode.nextElementSibling;
         question.classList.add('active');
+
     })
 });
