@@ -82,6 +82,10 @@
       overflow: hidden;
       transition: all 0.5s ease-in-out;
     }
+
+    .questionBtn {
+      transition: transform 0.5s ease-in-out;
+    }
   }
 }
 
@@ -92,5 +96,9 @@
 
   .question-answer__answer {
     height: 4.8rem;
+  }
+
+  .questionBtn {
+    transform: rotate(-180deg);
   }
 }
