@@ -50,3 +50,7 @@ The project is updated as of 2nd January 2024.
 The implemented changes are as follows:
 
 - Converted the project into a `Node.js` project, using a development server and compiling SASS down to CSS via `npm run` commands.
+
+## License
+
+This project is open source and available under the [MIT License](https://github.com/jakegodsall/fm-faq-accordion-card/blob/master/LICENSE).
