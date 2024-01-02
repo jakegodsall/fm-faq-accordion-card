@@ -45,12 +45,12 @@ This repository is part of a series of repositories that have recently been clea
 
 The project is updated as of 2nd January 2024.
 
-The implemented changes are as follows:
+The recent enhancements to the project include:
 
-- Converted the project into a `Node.js` project, using a development server and compiling SASS down to CSS via `npm run` commands.
-- Converted `px` units to `rem` with a root font size of `10px`.
-- Converted to a mobile-first layout.
-- Added transitions for opening and closing FAQ items, along with caret button rotation.
+- Transformation into a Node.js-based project, featuring a development server and the ability to compile SASS into CSS using npm run commands.
+- Transition from pixel (px) units to relative units (rem), with a baseline font size set at 10px.
+- Adoption of a mobile-first design approach for better responsiveness and user experience.
+- Introduction of smooth transitions for the expansion and collapse of FAQ sections, complemented by a rotating caret icon for visual feedback.
 
 ## License
 
