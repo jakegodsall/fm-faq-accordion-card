@@ -52,6 +52,7 @@ The implemented changes are as follows:
 - Converted the project into a `Node.js` project, using a development server and compiling SASS down to CSS via `npm run` commands.
 - Converted `px` units to `rem` with a root font size of `10px`.
 - Converted to a mobile-first layout.
+- Added transitions for opening and closing FAQ items, along with caret button rotation.
 
 ## License
 
