@@ -21,7 +21,7 @@
     .box-image {
       position: absolute;
       width: 10rem;
-      height: 10rem;
+      height: auto;
       top: 6rem;
       z-index: 1;
     }
@@ -103,11 +103,11 @@
   }
 }
 
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 980px) {
   .container {
     display: flex;
     flex-direction: row;
-    width: min(80%, 92rem);
+    width: min(80%, 85rem);
 
     &__image {
       position: relative;
@@ -150,6 +150,11 @@
       text-align: left;
       align-self: flex-start;
       margin-left: 2.5rem;
+    }
+
+    .accordion_questions {
+      padding-inline: 0;
+      padding-right: 2.5rem;
     }
   }
 }
