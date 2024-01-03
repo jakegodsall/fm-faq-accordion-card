@@ -110,18 +110,33 @@
     width: min(80%, 92rem);
 
     &__image {
-      width: 80%;
-      height: 100%;
       position: relative;
-      left: -7rem;
+      left: 0rem;
+      width: 40rem;
+      height: 30rem;
       top: auto;
       align-self: center;
+    }
+
+    .main-image-container {
       overflow: hidden;
+      width: 100%;
+      height: 100%;
     }
 
     .main-image {
+      position: relative;
+      left: -7rem;
       width: 100%;
-      overflow: hidden;
+      height: 100%;
+    }
+
+    .box-image {
+      top: 12rem;
+      left: -8rem;
+      width: 15rem;
+      height: 15rem;
+      z-index: 20;
     }
 
     &__accordion {
