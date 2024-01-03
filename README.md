@@ -51,6 +51,7 @@ The recent enhancements to the project include:
 - Transition from pixel (px) units to relative units (rem), with a baseline font size set at 10px.
 - Adoption of a mobile-first design approach for better responsiveness and user experience.
 - Introduction of smooth transitions for the expansion and collapse of FAQ sections, complemented by a rotating caret icon for visual feedback.
+- Corrected the overflow of images in mobile and desktop viewports.
 
 ## License
 
